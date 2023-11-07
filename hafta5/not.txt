@@ -1,0 +1,4 @@
+2 boyutlu matrislerde:
+
+matrix[0].size =  size of rows (0. satırda kaç eleman var demek sanırım. aynı şeye tekabul ediyor)
+matrix.size =  size of cols

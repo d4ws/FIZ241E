@@ -28,25 +28,28 @@ int main(int argc, char const* argv[])
         day++;
     }
 
+    // another way of printing elements of an array.
     cout << "Suspectible ratio:" << endl;
-    for (double i = 0; i < dayCountToSimulate; i++)
+    for (double i : S)
     {
-        cout << S[i] << " ";
+        cout << i << " ";
     }
+
     cout << endl;
 
     cout << "Infected ratio:" << endl;
-    for (double i = 0; i < dayCountToSimulate; i++)
+    for (double i : I)
     {
-        cout << I[i] << " ";
+        cout << i << " ";
     }
     cout << endl;
 
     cout << "Recovered ratio:" << endl;
-    for (double i = 0; i < dayCountToSimulate; i++)
+    for (double i : R)
     {
-        cout << R[i] << " ";
+        cout<<i<<" ";
     }
+    
     cout << endl;
 
     return 0;

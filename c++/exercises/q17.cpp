@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
     cout<<"Sum of array: "<<sumOfArray<<endl;
     cout<<""<<endl;
 
-    cout<<"Sine of array: "<<endl;
+    cout<<"Sine of array in degrees: "<<endl;
     for (double i = 0; i < sinArray.size(); i++)
     {
         cout<<sinArray[i]<<endl;

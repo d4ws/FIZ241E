@@ -22,6 +22,8 @@ while(t < days)
   t++;
 
 endwhile
-tt=1:length(S); % 1 den 50 ye kadar birer birer artan bir x ekseni oluşturuyoruz
-plot(tt, S, tt,I , tt,R)
+tt = 0:days - 1; % 0 den 49 a kadar birer birer artan bir x ekseni oluşturuyoruz.
+plot(tt, S, "black" ,tt,I , tt,R);
+xlabel("days")
+legend("Sick","Infected","Recovered")
 

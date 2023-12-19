@@ -1,4 +1,4 @@
-function[mysum , mysin] = qfunc(inp)
+function[mysum , mysin] = q12func(inp)
 
 mysum = sum(inp)
 

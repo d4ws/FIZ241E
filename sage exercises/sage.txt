@@ -1,0 +1,58 @@
+1)Define a polynom and take first derivative
+f(x) = x^2 + 1
+derivative(f,x)
+
+2)Define a polynom and take third derivative
+f(x) = x^3+ 1
+derivative(f,x,x,x)
+
+3)Write a indefinite integral and take it
+f(x) = 2*x + 1
+integral(f,x)
+
+4)Write a definite integral and take it
+f(x) = 2*x + 1
+integral(f,x,0,1) // 0'dan 1'e integral
+
+5)Write a func of x and take its limit as x goes to zero
+f(x) = 1/x 
+limit(f,x = 0)
+
+6)Write and solve a first order dif eq without inital conditions
+y = function("y")(x)
+myode = diff(y,x) + y == 1
+desolve(myode, ivar = x, dvar = y)
+
+7)Write and solve a first order dif eq with inital conditions
+y = function("y")(x)
+myode = diff(y,x) + y == 1
+desolve(myode, ivar = x, dvar = y)
+
+8)Write and solve a second order dif eq without inital conditions
+y = function("y")(x)
+myode = diff(y,x,x) + y == 0
+desolve(myode, ivar = x, dvar = y , ics=[0,0,1])
+
+9)Write and solve a second order dif eq with inital conditions
+y = function("y")(x)
+myode = diff(y,x,x) + y == 0
+desolve(myode, ivar = x, dvar = y , ics=[0,0,1])
+
+10) simplify 1/(x+1) + x/(x-6) - (5*x-2)/(x^2-5*x-6)
+y = 1/(x+1) + x/(x-6) - (5*x-2)/(x^2-5*x-6)
+y.simplify_full()
+
+11) show sin and cos plots on same graph. x = [0,3*pi]
+a , b = var("a b")
+a(x) = sin(x)
+b(x) = cos(x)
+
+p=plot(a(x) , (x,0,3*pi), color = "red")
+q=plot(b(x), (x,0,3*pi), color = "black")
+r = p + q
+r.show()
+
+12)plot sin(x*y) + cos(x*y) as a 3D graph. x = [-pi,pi], y = [-pi,pi]
+a = var("a")
+a(x,y) = sin(x*y) + cos(x*y)
+plot3d(a(x,y) , (x,-pi,pi) , (y,-pi,pi))

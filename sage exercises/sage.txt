@@ -31,7 +31,7 @@ desolve(myode, ivar = x, dvar = y ics=[0,1])
 8)Write and solve a second order dif eq without inital conditions
 y = function("y")(x)
 myode = diff(y,x,x) + y == 0
-desolve(myode, ivar = x, dvar = y , ics=[0,0,1])
+desolve(myode, ivar = x, dvar = y)
 
 9)Write and solve a second order dif eq with inital conditions
 y = function("y")(x)
